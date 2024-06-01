@@ -34,15 +34,6 @@
     ],
     "rules": [
       {
-        "domain": [
-          "series-a1.samanehha.co",
-          "series-a2.samanehha.co",
-          "series-a2-mec.varzesh360.co",
-          "series-a2-me.samanehha.co"
-        ],
-        "server": "dns-direct"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -56,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.99.0",
         "188.114.98.0",
+        "188.114.99.0",
         "2a06:98c1:3122::",
         "2a06:98c1:3123::",
-        "104.18.203.232",
         "104.18.202.232",
+        "104.18.203.232",
         "188.114.97.3",
         "188.114.96.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
       ]
     },
     "independent_cache": true
@@ -113,7 +104,8 @@
         "Dr.s+irancell+6 § 5",
         "Dr.s+irancell+7 § 6",
         "Dr.s+irancell+8 § 7",
-        "Dr.s+irancell+9 § 8"
+        "Dr.s+irancell+9 § 8",
+        "Dr.s+irancell+10 § 9"
       ],
       "default": "auto"
     },
@@ -129,7 +121,8 @@
         "Dr.s+irancell+6 § 5",
         "Dr.s+irancell+7 § 6",
         "Dr.s+irancell+8 § 7",
-        "Dr.s+irancell+9 § 8"
+        "Dr.s+irancell+9 § 8",
+        "Dr.s+irancell+10 § 9"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
@@ -137,30 +130,14 @@
     {
       "type": "shadowsocks",
       "tag": "Dr.s+irancell+1 § 0",
-      "server": "series-a1.samanehha.co",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "W74XFALLLuw6m5IA"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Dr.s+irancell+2 § 1",
-      "server": "series-a2.samanehha.co",
+      "server": "51.112.118.115",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "mps3FwmDjLrWaOVg"
     },
     {
       "type": "shadowsocks",
-      "tag": "Dr.s+irancell+3 § 2",
-      "server": "series-a2-mec.varzesh360.co",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "u17T3BvpYaaiuW2c"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Dr.s+irancell+4 § 3",
+      "tag": "Dr.s+irancell+2 § 1",
       "server": "23.157.40.81",
       "server_port": 7001,
       "method": "aes-256-gcm",
@@ -168,31 +145,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "Dr.s+irancell+5 § 4",
-      "server": "193.29.139.248",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a8bt9fY0QsLS6eLnXUe0Ym"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Dr.s+irancell+6 § 5",
-      "server": "205.134.180.139",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "lWaGPVFjmnag"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Dr.s+irancell+7 § 6",
-      "server": "series-a2-me.samanehha.co",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Bog0ELmMM9DSxDdQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "Dr.s+irancell+8 § 7",
+      "tag": "Dr.s+irancell+3 § 2",
       "server": "23.162.200.28",
       "server_port": 3389,
       "method": "aes-256-gcm",
@@ -200,11 +153,59 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "Dr.s+irancell+9 § 8",
+      "tag": "Dr.s+irancell+4 § 3",
+      "server": "23.157.40.81",
+      "server_port": 8090,
+      "method": "aes-256-gcm",
+      "password": "PCnnH6SQSnfoS27"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "Dr.s+irancell+5 § 4",
+      "server": "23.157.40.81",
+      "server_port": 6679,
+      "method": "aes-256-gcm",
+      "password": "TEzjfAYq2IjtuoS"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "Dr.s+irancell+6 § 5",
+      "server": "15.204.87.225",
+      "server_port": 8118,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "Dr.s+irancell+7 § 6",
       "server": "217.196.103.206",
       "server_port": 29312,
       "method": "chacha20-ietf-poly1305",
       "password": "qgpdyzHj8rZW9fDxxkUHRI"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "Dr.s+irancell+8 § 7",
+      "server": "188.212.132.20",
+      "server_port": 52952,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XRUwpkSouW5HCTUFUxErfnL5AmahofrjznVrAu2iNFMFGUCrChznAULhuHGAQdC463mzcgo2jV546Ut5HKhk3pz956cHYYyc"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "Dr.s+irancell+9 § 8",
+      "server": "92.243.27.51",
+      "server_port": 9802,
+      "method": "chacha20-ietf-poly1305",
+      "password": "j1WHr2u6a9mjnGnhV1mTCU"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "Dr.s+irancell+10 § 9",
+      "server": "51.112.118.115",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mps3FwmDjLrWaOVg"
     },
     {
       "type": "dns",
